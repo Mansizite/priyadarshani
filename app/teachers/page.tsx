@@ -35,7 +35,7 @@ export default function Page() {
 
         {/* Single Final Image */}
         <div className={styles.imageWrapper}>
-          <img src="/s1.jpg" alt="Teachers working together" className={styles.image} />
+          <img src="/images/graduation-day/IMG_6011.JPG" alt="Teachers working together" className={styles.image} />
         </div>
       </div>
       <Footer />

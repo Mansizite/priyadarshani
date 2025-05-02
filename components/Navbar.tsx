@@ -54,7 +54,7 @@ export default function Navbar() {
             <ul className={`${styles.dropdownWrapper} ${aboutDropdown ? styles.active : ""}`}>
               <li><Link href="#about" onClick={() => setAboutDropdown(false)}>About Our School</Link></li>
               <li><Link href="#why-choose-us" onClick={() => setAboutDropdown(false)}>Why Choose Us</Link></li>
-              <li><Link href="/vissionmission" onClick={() => setAboutDropdown(false)}>Vision & Mission</Link></li>
+              <li><Link href="/vissionMission" onClick={() => setAboutDropdown(false)}>Vision & Mission</Link></li>
               <li><Link href="/historyOfPriyadarshani" onClick={() => setAboutDropdown(false)}>History Of Priyadarshani</Link></li>
               <li><Link href="/teachers" onClick={() => setAboutDropdown(false)}>Teachers</Link></li>
               <li><Link href="/parents" onClick={() => setAboutDropdown(false)}>Parents</Link></li>
