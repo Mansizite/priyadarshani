@@ -1,0 +1,80 @@
+/* Container settings */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  margin-top: 100px;
+}
+
+/* Header styles with underline */
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #2d3748;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative; /* Ensures the pseudo-element is positioned correctly */
+}
+
+.heading::before {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Adjust the space between the heading and the underline */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px; /* Length of the underline */
+  height: 4px; /* Thickness of the underline */
+  background-color: #3182ce; /* Underline color */
+}
+
+/* Text Content Section */
+.textContent {
+  margin-top: 2rem;
+  padding: 0 20px;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+}
+
+/* Image Styles */
+.imageWrapper {
+  text-align: center;
+  max-width: 100%;
+  margin-top: 2rem;
+}
+
+.image {
+  width: 70%;
+  height: auto;
+  max-width: 700px; /* Prevents image from becoming too large */
+  margin: 0 auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+
+  .image {
+    max-width: 90%;
+  }
+}
