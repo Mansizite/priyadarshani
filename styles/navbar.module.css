@@ -1,10 +1,9 @@
 .navbar {
   position: fixed;
-  width: 100%;
   top: 0;
+  width: 100%;
   z-index: 50;
   background: white;
-  box-shadow: none;
   transition: all 0.3s ease-in-out;
 }
 
@@ -13,31 +12,58 @@
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0.75rem 1rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 60px;
 }
 
+/* LOGO */
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
   font-weight: bold;
   font-size: 1.25rem;
   text-decoration: none;
+  gap: 0.5rem;
 }
 
 .logoImage {
-  border-radius: 0.25rem;
+  border-radius: 0.375rem;
 }
 
+.logoText {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #111;
+}
+
+/* Center logo (mobile only) */
+.centerLogo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+/* Hamburger Button */
+.mobileMenuButton {
+  display: none;
+  z-index: 20;
+  cursor: pointer;
+}
+
+/* Nav Links */
 .navLinks {
   display: flex;
   gap: 2rem;
   list-style: none;
+  align-items: center;
 }
 
 .navLinks li a {
@@ -46,25 +72,7 @@
   font-weight: 500;
 }
 
-.mobileMenuButton {
-  display: none;
-  cursor: pointer;
-}
-
-.actionButtons {
-  display: flex;
-  gap: 1rem;
-}
-
-.registerButton {
-  background-color: #1d4ed8;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 0.375rem;
-  text-decoration: none;
-  font-weight: 500;
-}
-
+/* Dropdown */
 .dropdown {
   position: relative;
 }
@@ -82,11 +90,11 @@
   top: 100%;
   left: 0;
   background: white;
-  list-style: none;
   padding: 0.5rem 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  min-width: 220px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   z-index: 100;
-  min-width: 200px;
 }
 
 .dropdownWrapper li {
@@ -94,15 +102,37 @@
 }
 
 .dropdownWrapper li a {
-  color: #333;
   text-decoration: none;
+  color: #333;
 }
 
 .dropdownWrapper.active {
   display: block;
 }
 
-/* Mobile Styles */
+/* Apply Now Button */
+.actionButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.registerButton {
+  background-color: #1d4ed8;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Left: hamburger wrapper */
+.leftSection {
+  display: flex;
+  align-items: center;
+  z-index: 20;
+}
+
+/* Responsive for Mobile */
 @media (max-width: 768px) {
   .mobileMenuButton {
     display: block;
@@ -115,9 +145,12 @@
     background: white;
     width: 100%;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0;
     gap: 0;
     display: none;
-    padding: 1rem 0;
+    border-top: 1px solid #eee;
+    z-index: 15;
   }
 
   .navLinks.active {
@@ -125,7 +158,18 @@
   }
 
   .navLinks li {
+    width: 100%;
     padding: 0.75rem 1rem;
+  }
+
+  .dropdownWrapper {
+    position: static;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .dropdownWrapper li {
+    padding-left: 2rem;
   }
 
   .actionButtons {
@@ -135,64 +179,38 @@
   .actionButtons.active {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1rem;
     margin-top: 0.5rem;
-  }
-}
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  height: 60px;
-}
-
-/* Mobile hamburger */
-.mobileMenuButton {
-  cursor: pointer;
-  z-index: 10;
-}
-
-/* Left: hamburger */
-.leftSection {
-  display: flex;
-  align-items: center;
-  z-index: 10;
-}
-
-/* Centered logo on mobile */
-.centerLogo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-}
-
-/* Default logo styling */
-.logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.logoImage {
-  border-radius: 50%;
-}
-
-.logoText {
-  margin-left: 8px;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-/* On desktop, let layout be spaced normally */
-@media (min-width: 768px) {
-  .container {
-    justify-content: space-between;
   }
 
   .centerLogo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* On desktop */
+@media (min-width: 769px) {
+  .centerLogo {
     position: static;
     transform: none;
+  }
+
+  .navLinks {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    background: transparent;
+  }
+
+  .dropdownWrapper {
+    position: absolute;
+  }
+
+  .actionButtons {
+    display: flex !important;
   }
 }

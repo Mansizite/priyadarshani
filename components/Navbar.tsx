@@ -169,7 +169,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href="/vissionMission" onClick={closeMenus}>
+                <Link href="/vissionmission" onClick={closeMenus}>
                   Vision & Mission
                 </Link>
               </li>

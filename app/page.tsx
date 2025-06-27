@@ -5,6 +5,8 @@ import AboutSection from "@/components/AboutSection"
 import CoursesSection from "@/components/CoursesSection"
 import TestimonialsSection from "@/components/TestimonialsSection"
 import ContactSection from "@/components/ContactSection"
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 
 
