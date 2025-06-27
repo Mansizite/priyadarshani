@@ -90,7 +90,7 @@ const MandatoryDisclosure = () => {
                 Copies of Societies/Trust/Company Registration/Renewal Certificate, as applicable
               </td>
               <td className="border p-2">
-                <a href="\SCHOOL DOCUMENT.pdf">View</a>
+                <a href="/documents/Societies Registration.pdf">View</a>
               </td>
             </tr>
             <tr>
@@ -109,7 +109,7 @@ const MandatoryDisclosure = () => {
                 Copy of Valid Building Safety Certificate as per the National Building Code
               </td>
               <td className="border p-2">
-                <a href="\building-safety.pdf">View</a>
+                <a href="/documents/Stability Certificate.pdf">View</a>
               </td>
             </tr>
             <tr>
@@ -118,7 +118,7 @@ const MandatoryDisclosure = () => {
                 Copy of Valid Fire Safety Certificate issued by the Competent Authority
               </td>
               <td className="border p-2">
-                <a href="\Fire Safty Certificate.pdf">View</a>
+                <a href="/documents/Fire NOC.pdf">View</a>
               </td>
             </tr>
             <tr>
@@ -136,7 +136,7 @@ const MandatoryDisclosure = () => {
                 Copies of Valid Water, Health, and Sanitation Certificates
               </td>
               <td className="border p-2">
-                <a href="/tank-cleaning-certificate.jpg">View</a>
+                <a href="/documents/Safe drinking water and sanitary condition certificate.pdf">View</a>
               </td>
             </tr>
             
@@ -161,35 +161,35 @@ const MandatoryDisclosure = () => {
         <td className="border p-2">1</td>
         <td className="border p-2">Fee Structure of the School</td>
         <td className="border p-2">
-          <a href="/Fees Structure 2025-26.pdf">View</a>
+          <a href="/documents/Fee Structure.pdf">View</a>
         </td>
       </tr>
       <tr>
         <td className="border p-2">2</td>
         <td className="border p-2">Annual Academic Calendar</td>
         <td className="border p-2">
-          <a href="/Academic Calender.pdf">View</a>
+          <a href="/documents/Annual Calender.pdf">View</a>
         </td>
       </tr>
       <tr>
         <td className="border p-2">3</td>
         <td className="border p-2">List of School Management Committee (SMC)</td>
         <td className="border p-2">
-          <a href="https://priyadarshanischoolmoshi.in/pdf/SMC.pdf">View</a>
+          <a href="/documents/School Management Committee.pdf">View</a>
         </td>
       </tr>
       <tr>
         <td className="border p-2">4</td>
         <td className="border p-2">List of Parents Teachers Association (PTA) Members</td>
         <td className="border p-2">
-          <a href="https://priyadarshanischoolmoshi.in/pdf/PTA.pdf">View</a>
+          <a href="/documents/PTA Member.pdf">View</a>
         </td>
       </tr>
       <tr>
         <td className="border p-2">5</td>
         <td className="border p-2">Last Three-Year Result of the Board Examination</td>
         <td className="border p-2">
-          <a href="https://priyadarshanischoolmoshi.in/pdf/CBSELastThreeYearsReport.pdf">View</a>
+          <a href="">View</a>
         </td>
       </tr>
     </tbody>
