@@ -401,7 +401,7 @@ const MandatoryDisclosure = () => {
             </thead>
             <tbody>
               {[
-                ["Recognition Certificate under RTE Act, 2009", "Recognition Certificate RTE.pdf"],
+                // ["Recognition Certificate under RTE Act, 2009", "Recognition Certificate RTE.pdf"],
                 ["Self-Certification for Affiliation / Upgradation / Extension", "self-certification.pdf"],
                 ["Building Safety Certificate", "Stability Certificate.pdf"],
                 ["Fire Safety Certificate", "Fire NOC.pdf"],
