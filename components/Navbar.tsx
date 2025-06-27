@@ -221,14 +221,20 @@ export default function Navbar() {
               Contact
             </Link>
           </li>
+           <li className={styles.mobileOnlyButton}>
+    <Link href="/register" className={styles.registerButton}>
+      Apply Now
+    </Link>
+  </li>
+
         </ul>
 
         {/* Right: Apply Now Button */}
-        <div className={`${styles.actionButtons} ${isOpen ? styles.active : ""}`}>
+        {/* <div className={`${styles.actionButtons} ${isOpen ? styles.active : ""}`}>
           <Link href="/register" className={styles.registerButton}>
             Apply Now
           </Link>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
