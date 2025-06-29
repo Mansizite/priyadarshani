@@ -100,7 +100,7 @@ export default function ContactSection() {
               <MapPin className={styles.infoIcon} />
               <div>
                 <h3 className={styles.infoTitle}>Visit Us</h3>
-                <p className={styles.infoText}>Priyadarshani School,Bhosari</p>
+                <p className={styles.infoText}>Priyadarshani High  School,Bhosari</p>
                 <p className={styles.infoText}>Bhosari-413171</p>
               </div>
             </div>
