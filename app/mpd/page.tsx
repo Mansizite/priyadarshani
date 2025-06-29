@@ -369,14 +369,14 @@ const MandatoryDisclosure = () => {
             </thead>
             <tbody>
               {[
-                ["Name of the School", "Priyadarshani School, Bhosari"],
+                ["Name of the School", "Priyadarshani High School, Bhosari"],
                 ["Affiliation No.", "-"],
                 ["School Code", "-"],
-                ["Complete Address", "Priyadarshani School Bhosari-413171"],
+                ["Complete Address", "Priyadarshani High School, Near Sandvik colony, Bhosari"],
                 ["Principal Name", "Ms. Shilpi Shukla"],
                 ["Principal Qualification", "-"],
                 ["School Email ID", "priyadarshanischool@gmail.com"],
-                ["Contact Details", "+91 8956788450 / 7066064189"]
+                ["Contact Details", "+91 9607058868 / 7066064189"]
               ].map(([label, value], index) => (
                 <tr key={index}>
                   <td className="border p-2">{index + 1}</td>

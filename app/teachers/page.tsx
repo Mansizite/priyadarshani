@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "@/styles/teachers.module.css"; // Ensure this path is correct
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+        import Navbar from "@/components/Navbar";
+        import Footer from "@/components/Footer";
 
 export default function Page() {
   return (

@@ -1,13 +1,10 @@
 .heroSection {
   position: relative;
   height: 100vh;
-  width: 100%;
+  min-height: 500px;
   display: flex;
   align-items: center;
-  justify-content: center;
   overflow: hidden;
-  margin-top: 0;
-  padding-top: 70px; /* Add padding to account for the fixed navbar */
 }
 
 .videoContainer {
@@ -16,7 +13,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
 }
 
 .backgroundVideo {
@@ -31,34 +28,74 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
 }
 
 .content {
+  position: relative;
+  z-index: 3;
   max-width: 1200px;
+  margin: 0 auto;
   padding: 0 2rem;
-  text-align: center;
   color: white;
-  z-index: 1;
-  animation: fadeIn 1s ease-in-out;
+  text-align: center;
+}
+
+.badgeContainer {
+  margin-bottom: 1.5rem;
+}
+
+.sinceBadge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .title {
-  font-size: 3rem;
-  font-weight: 800;
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .highlight {
-  color: #3b82f6;
+  color: white; /* Gold/yellow accent color */
+  position: relative;
+ 
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+ 
+  border-radius: 3px;
+}
+
+.location {
+  font-size: 0.8em;
+  font-weight: 400;
+  display: block;
+  margin-top: 0.5rem;
 }
 
 .subtitle {
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 2vw, 1.3rem);
   max-width: 700px;
   margin: 0 auto 2.5rem;
+  line-height: 1.6;
   opacity: 0.9;
 }
 
@@ -70,67 +107,45 @@
 }
 
 .primaryButton {
-  padding: 0.75rem 1.5rem;
-  background-color: #3b82f6;
-  color: white;
+  background: #f8c537;
+  color: #1a1a1a;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
   font-weight: 600;
-  border-radius: 0.25rem;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(59, 130, 246, 0.25);
+  border: 2px solid #f8c537;
 }
 
 .primaryButton:hover {
-  background-color: #2563eb;
+  background: transparent;
+  color: #f8c537;
   transform: translateY(-2px);
-  box-shadow: 0 6px 8px rgba(59, 130, 246, 0.3);
 }
 
 .secondaryButton {
-  padding: 0.75rem 1.5rem;
-  background-color: transparent;
+  background: transparent;
   color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
   font-weight: 600;
-  border: 2px solid white;
-  border-radius: 0.25rem;
   text-decoration: none;
   transition: all 0.3s ease;
+  border: 2px solid white;
 }
 
 .secondaryButton:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   transform: translateY(-2px);
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @media (max-width: 768px) {
-  .title {
-    font-size: 2.25rem;
-  }
-
-  .subtitle {
-    font-size: 1rem;
-  }
-
   .cta {
     flex-direction: column;
     align-items: center;
   }
-
-  .primaryButton,
-  .secondaryButton {
-    width: 100%;
-    text-align: center;
+  
+  .title {
+    line-height: 1.1;
   }
 }
-

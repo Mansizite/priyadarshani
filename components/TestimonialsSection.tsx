@@ -8,6 +8,14 @@ import styles from "@/styles/testimonials-section.module.css"
 const testimonials = [
   {
     id: 1,
+    name: "Dr. Nitin Gawari ",
+    role: "Parent",
+    image: "parents-testimonial.jpg",
+    quote:
+      "I would like to extend my heartfelt thanks for inviting me to the Father’s Day celebration at school. It was a truly memorable experience, and I feel honored to have been part of such a thoughtful and well-organized event.Seeing the effort the students and staff put into making the day special was deeply touching. It was a joy to witness the creativity, enthusiasm, and love that went into every performance and activity. Thank you for creating such a warm and inclusive environment that values the role of parents in their children’s lives.I appreciate the opportunity to share this special day with my child and other families. It’s moments like these that create lasting memories and strengthen the bond between school and home.Thank you madam ",
+  },
+    {
+    id: 2,
     name: "Samadhan Gawali",
     role: "Parent",
     image: "/parent.jpg?height=100&width=100",

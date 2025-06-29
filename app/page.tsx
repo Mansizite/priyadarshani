@@ -6,6 +6,7 @@ import CoursesSection from "@/components/CoursesSection"
 import TestimonialsSection from "@/components/TestimonialsSection"
 import ContactSection from "@/components/ContactSection"
 import "bootstrap/dist/css/bootstrap.min.css";
+import AlumniPage from "./alumni/page"
 
 
 
@@ -23,7 +24,7 @@ export default function Home() {
   
       <CoursesSection />
       <TestimonialsSection />
-      
+      <AlumniPage/>
       <ContactSection />
       
       <Footer />

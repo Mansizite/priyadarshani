@@ -20,7 +20,7 @@ export default function Footer() {
                 src="/priyadarshani-logo.jpg" // ✅ Make sure your logo is in the public/images folder
                 alt="School Logo"
               />
-              <h3 className={styles.footerLogo}>Priyadarshani</h3>
+              <h3 className={styles.footerLogo}>Priyadarshani High School </h3>
             </div>
 
             <p className={styles.footerDescription}>
@@ -31,7 +31,7 @@ export default function Footer() {
             <div className={styles.contactInfo}>
               <div className={styles.contactItem}>
                 <Phone size={16} className={styles.contactIcon} />
-                <span>+91 89567 88450 | +91 70660 64189</span>
+                <span>+91 9607058868 / 7066064189</span>
               </div>
               <div className={styles.contactItem}>
                 <Mail size={16} className={styles.contactIcon} />
@@ -39,7 +39,7 @@ export default function Footer() {
               </div>
               <div className={styles.contactItem}>
                 <MapPin size={16} className={styles.contactIcon} />
-                <span>Priyadarshani School, Bhosari-413171</span>
+                <span>Priyadarshani High School,Near Sadvik Colony, Bhosari-413171</span>
               </div>
             </div>
 

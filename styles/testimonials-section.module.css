@@ -69,10 +69,11 @@
 
 .testimonialContainer {
   position: relative;
-  width: 100%;
-  max-width: 800px;
+  width: 90%; /* Makes it more responsive */
+  max-width: 1000px; /* Wider than before */
   height: 300px;
   overflow: hidden;
+  margin: 0 auto; /* Center it */
 }
 
 .testimonial {
