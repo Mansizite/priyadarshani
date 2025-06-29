@@ -39,7 +39,7 @@ export default function Footer() {
               </div>
               <div className={styles.contactItem}>
                 <MapPin size={16} className={styles.contactIcon} />
-                <span>Priyadarshani High School,Near Sadvik Colony, Bhosari-413171</span>
+                <span>Priyadarshani High School,Near Sandvik Colony, Bhosari-413171</span>
               </div>
             </div>
 
